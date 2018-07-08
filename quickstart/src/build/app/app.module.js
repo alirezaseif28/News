@@ -12,10 +12,12 @@ var app_component_1 = require("./app.component");
 var home_component_1 = require("./component/home.component");
 var aboutUs_component_1 = require("./component/aboutUs.component");
 var contactUs_component_1 = require("./component/contactUs.component");
+var news_component_1 = require("./component/news.component");
 var appRoutes = [
     { path: '', component: home_component_1.HomeComponent },
     { path: 'about-us', component: aboutUs_component_1.AboutUsComponent },
     { path: 'contact-us', component: contactUs_component_1.ContactUsComponent },
+    { path: 'news', component: news_component_1.NewsComponent },
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -25,7 +27,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(appRoutes)],
-        declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, aboutUs_component_1.AboutUsComponent, contactUs_component_1.ContactUsComponent],
+        declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, aboutUs_component_1.AboutUsComponent, contactUs_component_1.ContactUsComponent, news_component_1.NewsComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
